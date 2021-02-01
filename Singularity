@@ -11,8 +11,8 @@ From: neurodebian:latest
 
 %post
   
-  apt-get update
   
+  apt-get update
   DEBIAN_FRONTEND=noninteractive apt-get -yq install \
     build-essential \
     wget \
@@ -23,19 +23,18 @@ From: neurodebian:latest
     libcurl4-openssl-dev \
     libgit2-dev \
     libssh2-1-dev \
-    python3-setuptools \
+    python3-setuptools
 
-  apt-get update
   
-  wget -c https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
-    /bin/bash Anaconda3-2020.11-Linux-x86_64.sh -bfp /usr/local
+  wget -c https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
+    /bin/bash Anaconda3-2019.10-Linux-x86_64.sh -bfp /usr/local
 
   #Conda configuration of channels from .condarc file
 
   conda config --add channels defaults
   conda config --add channels conda-forge
-  conda config --add channels pytorch
-  conda update conda
+#  conda config --add channels pytorch
+  # conda update conda
 
   #Install environment
    conda install --file requirements.txt
