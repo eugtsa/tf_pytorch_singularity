@@ -3,8 +3,8 @@ From: neurodebian:latest
 
 %help
 
-    Container with Anaconda 3 (Conda 2020.11) and pytorch, tf and notebooks environment from neurodebian.
-    This installation is based on Python 3.8
+    Container with Anaconda 3 (Conda 2019.10), tensorflow-gpu-2.0 and notebooks environment from neurodebian.
+    This installation is based on Python 3.7
 
 %files
   ./requirements.txt /requirements.txt
@@ -33,8 +33,6 @@ From: neurodebian:latest
 
   conda config --add channels defaults
   conda config --add channels conda-forge
-#  conda config --add channels pytorch
-  # conda update conda
 
   #Install environment
    conda install --file requirements.txt
