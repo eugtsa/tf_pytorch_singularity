@@ -35,5 +35,5 @@ From: neurodebian:latest
   conda config --add channels conda-forge
 
   #Install environment
-   conda install --file requirements.txt
+  conda install --file requirements.txt
 
