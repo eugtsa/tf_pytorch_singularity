@@ -1,4 +1,5 @@
 tensorflow-gpu==2.0*
+dill
 xgboost
 scikit-learn
 scipy
