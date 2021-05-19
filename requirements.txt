@@ -8,6 +8,7 @@ pandas
 pymongo
 requests
 pyarrow
+plotly
 tqdm
 cloudpickle
 mock
